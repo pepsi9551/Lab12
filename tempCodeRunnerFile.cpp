@@ -10,13 +10,13 @@ int main(){
     return 0; 
 }
 
-int fibonacci(int y){
-    if(y == 0){
+int fibonacci(int x){
+    if(x == 0){
         return 0;
-    }else if(y == 1){
+    }else if(x == 1){
         return 1;
-    }else{
-        return fibonacci(y-1) + fibonacci(y-2);
+    }else if(x > 1){
+        return fibonacci(x-1) + fibonacci(x-2);
 
     }
 }
